@@ -13,8 +13,8 @@ const Profile = () => {
       <div className="mine-uinfo">
         <div className="mine-top">
           <div className="left">
-            <div className="login_id">demo@gmail.com</div>
-            <div className="vip">0</div>
+            <div className="login_id">abu..........il.com</div>
+            <div className="vip">4</div>
             <div className="ckeyswap">
               <span>Invite code : </span>
               <span className="ckey">u353459hjzj1</span>
@@ -23,11 +23,11 @@ const Profile = () => {
         </div>
         <div className="money-div">
           <div>
-            <div className="money">$0</div>
+            <div className="money">$3240</div>
             <div className="m_bottom">Balance</div>
           </div>
           <div className="first">
-            <div className="money">$55.20</div>
+            <div className="money">$1250.20</div>
             <div className="m_bottom">Total balance</div>
           </div>
           <div>
@@ -41,29 +41,29 @@ const Profile = () => {
       <div className="earning-history">
         <div className="flex-row">
           <div className="flex-item">
-            <div>$0</div>
+            <div>$135</div>
             <div>Today's Earnings</div>
           </div>
           <div className="flex-item">
-            <div>$0.20</div>
+            <div>$135</div>
             <div>Yesterday's Earnings</div>
           </div>
           <div className="flex-item">
-            <div>$0.20</div>
+            <div>$1059</div>
             <div>Monthly income</div>
           </div>
         </div>
         <div className="flex-row">
           <div className="flex-item">
-            <div>$0</div>
+            <div>$250</div>
             <div>Earnings last month</div>
           </div>
           <div className="flex-item">
-            <div>$0.20</div>
+            <div>$2346</div>
             <div>Total revenue</div>
           </div>
           <div className="flex-item">
-            <div>$0</div>
+            <div>$584</div>
             <div>Earnings this week</div>
           </div>
         </div>

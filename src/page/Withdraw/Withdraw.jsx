@@ -49,24 +49,18 @@ const Withdraw = () => {
             <div className="withdwal-footer">
               <div className="note">
                 <p>
-                  1. The withdrawal amount is $10-$99999.
-                  <br />
-                  2. Withdraw salary at most once a day.
-                  <br />
+                  1. The withdrawal amount Minimum 10$ and maximum Unlimited
+                  <br /> <br />
+                  2. Withdraw at most once a day.
+                  <br /> <br />
                   3. Withdrawal will be completed within 48 hours of working
                   time.
-                  <br />
-                  4.15% withdrawal fee, the minimum fee is $1.
-                  <br />
-                  5. Handling fee discount: only on the 1st, 11th, and 21st of
-                  each month, you can enjoy an 8% cash withdrawal discount
-                  <br />
-                  For example: You withdraw 1000$ on the 11th. You can get a
-                  cash withdrawal fee subsidy of 80$.
-                  <br />
-                  The conditions for this preferential subsidy are: you can
-                  enjoy this discount if you do not initiate any cash withdrawal
-                  within 9 days before the 1st, 11th, and 21st of each month.
+                  <br /> <br />
+                  4.10% withdrawal Goverment fee Tax, the minimum fee is $1.
+                  <br /> <br />
+                  5. For example: You withdraw 10$ You can get a cash withdrawal
+                  fee subsidy of 1$.
+                  <br /> <br />
                 </p>
               </div>
             </div>

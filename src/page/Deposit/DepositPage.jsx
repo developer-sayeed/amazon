@@ -55,12 +55,11 @@ const DepositPage = () => {
         </div>
         <div className="deposit-footer">
           <div className="note">
-            <h3>Note:-</h3>
             <p>
-              <span>
+              <h5>
                 Before proceeding with the deposit, I kindly request that you
                 review the following:
-              </span>
+              </h5>
               <span>
                 Confirm Wallet Address: Double-check that the recipient's wallet
                 address provided is accurate and matches the TRC20 wallet you

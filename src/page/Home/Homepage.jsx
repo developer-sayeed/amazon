@@ -60,16 +60,23 @@ const Homepage = () => {
             <div className="task-list listv0 font-icon">
               <div className="item active">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758035394.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
+                  <div className="vname">VIP 0</div>
+                  <div className="info">earn $0.10 Per day</div>
+                </div>
+              </div>
+              <div className="item ">
+                <div className="img-swap">
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 1</div>
                   <div className="info">earn $1.00 Per day</div>
                 </div>
-                {/* <div className="shadow noactive " />
-                <div className="lock noactive" /> */}
+                <div className="shadow noactive " />
+                <div className="lock noactive" />
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758035394.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 2</div>
                   <div className="info">earn $9.00 Per day</div>
                 </div>
@@ -78,7 +85,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758044968.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 3</div>
                   <div className="info">earn $40.00 Per day</div>
                 </div>
@@ -87,7 +94,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758054918.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 4</div>
                   <div className="info">earn $135.00 Per day</div>
                 </div>
@@ -96,7 +103,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758066003.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 5</div>
                   <div className="info">earn $400.00 Per day</div>
                 </div>
@@ -105,7 +112,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758075131.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 6</div>
                   <div className="info">earn $1200.00 Per day</div>
                 </div>
@@ -114,7 +121,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758088439.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 7</div>
                   <div className="info">earn $3600.00 Per day</div>
                 </div>
@@ -123,7 +130,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758098517.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 8</div>
                   <div className="info">earn $6000.00 Per day</div>
                 </div>
@@ -132,7 +139,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758110516.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 9</div>
                   <div className="info">earn $12500.00 Per day</div>
                 </div>
@@ -141,7 +148,7 @@ const Homepage = () => {
               </div>
               <div className="item">
                 <div className="img-swap">
-                  <img src="https://mallv0.oss-accelerate.aliyuncs.com/adsShop/20230915/1694758119848.png" />
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
                   <div className="vname">VIP 10</div>
                   <div className="info">earn $30000.00 Per day</div>
                 </div>
