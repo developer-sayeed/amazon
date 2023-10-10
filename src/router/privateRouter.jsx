@@ -1,6 +1,7 @@
 import PageLayout from "../components/PageLayout/PageLayout";
 import ChangeFundPassword from "../page/Auth/ChangeFundPassword";
 import ChangePassword from "../page/Auth/ChangePassword";
+import ConpanyInfo from "../page/CompanyInfo/ConpanyInfo";
 import DepositPage from "../page/Deposit/DepositPage";
 import DepositRecord from "../page/Deposit/depositRecord";
 import Homepage from "../page/Home/Homepage";
@@ -79,6 +80,10 @@ const privateRouter = [
       {
         path: "/changeFundpassword",
         element: <ChangeFundPassword />,
+      },
+      {
+        path: "/companyinfo",
+        element: <ConpanyInfo />,
       },
     ],
   },

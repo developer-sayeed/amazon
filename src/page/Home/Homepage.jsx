@@ -36,21 +36,21 @@ const Homepage = () => {
           </div>
           <div className="m2">
             <div className="title">Company information</div>
-            <a href="/" className="font-icon go-icon">
+            <Link to={"/companyinfo"} className="font-icon go-icon">
               Details
-            </a>
+            </Link>
           </div>
           <div className="m3">
             <div className="title">Recharge</div>
-            <a href="/" className="font-icon go-icon">
+            <Link to={"/deposit"} href="/" className="font-icon go-icon">
               Details
-            </a>
+            </Link>
           </div>
           <div className="m4">
             <div className="title">Withdraw now</div>
-            <a href="/" className="font-icon go-icon">
+            <Link to={"withdwal"} className="font-icon go-icon">
               Details
-            </a>
+            </Link>
           </div>
         </div>
 

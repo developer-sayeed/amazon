@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { AiOutlineGlobal } from "react-icons/ai";
+import { RiCustomerService2Line } from "react-icons/ri";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
           />
         </div>
         <div className="iocn">
-          <AiOutlineGlobal />
+          <RiCustomerService2Line />
         </div>
       </div>
     </>
