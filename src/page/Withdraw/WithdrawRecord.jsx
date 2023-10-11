@@ -24,8 +24,8 @@ const WithdrawalRecord = () => {
               <div>$150.00</div>
             </div>
             <div className="flex_v4 record-item">
-              <div>order number</div>
-              <div>p5n7d98z5368zxnt61</div>
+              <div>Status</div>
+              <div>Success</div>
             </div>
           </div>
         </div>

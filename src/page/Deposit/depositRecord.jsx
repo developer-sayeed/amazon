@@ -22,11 +22,33 @@ const DepositRecord = () => {
             </div>
             <div className="flex_v4 record-item">
               <div>Amount</div>
+              <div>$100.00</div>
+            </div>
+            <div className="flex_v4 record-item">
+              <div>order number</div>
+              <div>p5n7d98z5368zxnt61</div>
+            </div>
+            <div className="flex_v4 record-item">
+              <div>Result</div>
+              <div>Success</div>
+            </div>
+          </div>
+          <div className="tr-item">
+            <div className="flex_v4 record-item">
+              <div>Time</div>
+              <div>2023-09-28 03:51:35</div>
+            </div>
+            <div className="flex_v4 record-item">
+              <div>Amount</div>
               <div>$150.00</div>
             </div>
             <div className="flex_v4 record-item">
               <div>order number</div>
               <div>p5n7d98z5368zxnt61</div>
+            </div>
+            <div className="flex_v4 record-item">
+              <div>Result</div>
+              <div>Success</div>
             </div>
           </div>
         </div>
