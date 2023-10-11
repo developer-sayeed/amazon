@@ -38,7 +38,7 @@ const ConpanyInfo = () => {
           on the 30th of every month. Gold agents can get a reward of US$8,888.
           Platinum agents can get a reward of US$12,888. Diamond agents can get
           a reward of US$18,888. To apply for rewards, please contact online
-          customer service: https://t. me/Evangeline868
+          customer service:
         </p>
       </div>
     </>

@@ -155,6 +155,15 @@ const Homepage = () => {
                 <div className="shadow noactive " />
                 <div className="lock noactive" />
               </div>
+              <div className="item">
+                <div className="img-swap">
+                  <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
+                  <div className="vname">VIP 11</div>
+                  <div className="info">earn $30000.00 Per day</div>
+                </div>
+                <div className="shadow noactive " />
+                <div className="lock noactive" />
+              </div>
             </div>
           </div>
         </div>

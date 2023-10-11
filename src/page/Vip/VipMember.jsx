@@ -34,9 +34,6 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span> 2</span>
                 </div>
-                <div className="join" style={{ display: "none" }}>
-                  Join now
-                </div>
               </div>
               <div className="main-right">
                 <img src="https://i.ibb.co/x6ntKBG/vip-with-crown-composition-1284-36184-removebg-preview.png" />
@@ -71,7 +68,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -108,7 +111,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -145,7 +154,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -182,7 +197,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -219,7 +240,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -256,7 +283,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -293,7 +326,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -331,7 +370,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
@@ -368,7 +413,13 @@ const VipMember = () => {
                   <span>Daily tasks</span>
                   <span>10</span>
                 </div>
-                <button className="join" type="submit">
+                <button
+                  onClick={() => {
+                    alert("Vip Coming Soon");
+                  }}
+                  className="join"
+                  type="submit"
+                >
                   Join
                 </button>
               </div>
