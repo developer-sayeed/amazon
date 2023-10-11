@@ -41,17 +41,17 @@ const VipMember = () => {
             </div>
             <div className="flex_v0 vip-earn">
               <div>
-                <div className="minfo">$0.10</div>
+                <div className="minfo">$0.50</div>
                 <div>Per order</div>
               </div>
               <div>
-                <div className="minfo">$0.20</div>
+                <div className="minfo">$1.00</div>
                 <div>Daily</div>
               </div>
               <div>
                 <div className="minfo">$0.80</div>
                 <div>
-                  <span>4</span>
+                  <span>3</span>
                   <span>Day</span>
                 </div>
               </div>
