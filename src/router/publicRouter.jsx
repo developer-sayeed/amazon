@@ -1,15 +1,21 @@
 import LoginPage from "../page/Auth/LoginPage";
 import RegisterPage from "../page/Auth/RegisterPage";
+import PublicRouteGard from "./PublicRouteGard";
 
 // create public router
 const publicRouter = [
   {
-    element: <LoginPage />,
-    path: "/login",
-  },
-  {
-    element: <RegisterPage />,
-    path: "/register",
+    element: <PublicRouteGard />,
+    children: [
+      {
+        element: <LoginPage />,
+        path: "/login",
+      },
+      {
+        element: <RegisterPage />,
+        path: "/register",
+      },
+    ],
   },
 ];
 

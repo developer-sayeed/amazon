@@ -6,15 +6,25 @@ import { BsFillCreditCard2FrontFill, BsPencilSquare } from "react-icons/bs";
 import { SlDiamond } from "react-icons/sl";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logOutUser } from "../../features/auth/authSliceApi";
+import UseAuthUserState from "../../hooks/UseAuthUserState";
 
 const Profile = () => {
+  const dispatch = useDispatch();
+
+  const handleUserLogout = (e) => {
+    e.preventDefault();
+    dispatch(logOutUser());
+  };
+  const { user } = UseAuthUserState();
   return (
     <div className="tab-panel tab-fund_mine profilepage" style={{}}>
       <div className="mine-uinfo">
         <div className="mine-top">
           <div className="left">
-            <div className="login_id">abu..........il.com</div>
-            <div className="vip">4</div>
+            <div className="login_id">{user.email}</div>
+            <div className="vip">{user.currentVip}</div>
             <div className="ckeyswap">
               <span>Invite code : </span>
               <span className="ckey">u353459hjzj1</span>
@@ -23,11 +33,11 @@ const Profile = () => {
         </div>
         <div className="money-div">
           <div>
-            <div className="money">$3240</div>
+            <div className="money">${user.balance}</div>
             <div className="m_bottom">Balance</div>
           </div>
           <div className="first">
-            <div className="money">$1250.20</div>
+            <div className="money">${user.totalBalance}</div>
             <div className="m_bottom">Total balance</div>
           </div>
           <div>
@@ -41,29 +51,29 @@ const Profile = () => {
       <div className="earning-history">
         <div className="flex-row">
           <div className="flex-item">
-            <div>$135</div>
+            <div>${user.todayEarning}</div>
             <div>Today's Earnings</div>
           </div>
           <div className="flex-item">
-            <div>$135</div>
+            <div>${user.yesterdayEarning}</div>
             <div>Yesterday's Earnings</div>
           </div>
           <div className="flex-item">
-            <div>$1059</div>
+            <div>${user.monthlyEarning}</div>
             <div>Monthly income</div>
           </div>
         </div>
         <div className="flex-row">
           <div className="flex-item">
-            <div>$250</div>
+            <div>${user.lastMonthlyEarning}</div>
             <div>Earnings last month</div>
           </div>
           <div className="flex-item">
-            <div>$2346</div>
+            <div>${user.totalEarning}</div>
             <div>Total revenue</div>
           </div>
           <div className="flex-item">
-            <div>$584</div>
+            <div>${user.weeklyEarning}</div>
             <div>Earnings this week</div>
           </div>
         </div>
@@ -144,7 +154,7 @@ const Profile = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/" onClick={handleUserLogout}>
               <div className="left">
                 <AiOutlinePoweroff /> Logout
               </div>

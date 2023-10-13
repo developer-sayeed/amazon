@@ -15,6 +15,7 @@ import VipMember from "../page/Vip/VipMember";
 import Withdraw from "../page/Withdraw/Withdraw";
 import WithdrawalRecord from "../page/Withdraw/WithdrawRecord";
 import WithdwalMethod from "../page/Withdraw/WithdwalMethod";
+import PrivateRouteGard from "./PrivateRouteGard";
 
 // create Private router
 const privateRouter = [
@@ -22,68 +23,73 @@ const privateRouter = [
     element: <PageLayout />,
     children: [
       {
-        path: "/",
-        element: <Homepage />,
-      },
-      {
-        path: "/mession",
-        element: <MessionPage />,
-      },
-      {
-        path: "/team",
-        element: <TeamPage />,
-      },
-      {
-        path: "/team/team1",
-        element: <TeamOne />,
-      },
-      {
-        path: "/team/team2",
-        element: <TeamTwo />,
-      },
-      {
-        path: "/team/team3",
-        element: <TeamThree />,
-      },
-      {
-        path: "/vip",
-        element: <VipMember />,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/deposit",
-        element: <DepositPage />,
-      },
-      {
-        path: "/deposit/record",
-        element: <DepositRecord />,
-      },
-      {
-        path: "/withdwal",
-        element: <Withdraw />,
-      },
-      {
-        path: "/withdwal/record",
-        element: <WithdrawalRecord />,
-      },
-      {
-        path: "/withdwalmethod",
-        element: <WithdwalMethod />,
-      },
-      {
-        path: "/changepassword",
-        element: <ChangePassword />,
-      },
-      {
-        path: "/changeFundpassword",
-        element: <ChangeFundPassword />,
-      },
-      {
-        path: "/companyinfo",
-        element: <ConpanyInfo />,
+        element: <PrivateRouteGard />,
+        children: [
+          {
+            path: "/",
+            element: <Homepage />,
+          },
+          {
+            path: "/mession",
+            element: <MessionPage />,
+          },
+          {
+            path: "/team",
+            element: <TeamPage />,
+          },
+          {
+            path: "/team/team1",
+            element: <TeamOne />,
+          },
+          {
+            path: "/team/team2",
+            element: <TeamTwo />,
+          },
+          {
+            path: "/team/team3",
+            element: <TeamThree />,
+          },
+          {
+            path: "/vip",
+            element: <VipMember />,
+          },
+          {
+            path: "/profile",
+            element: <Profile />,
+          },
+          {
+            path: "/deposit",
+            element: <DepositPage />,
+          },
+          {
+            path: "/deposit/record",
+            element: <DepositRecord />,
+          },
+          {
+            path: "/withdwal",
+            element: <Withdraw />,
+          },
+          {
+            path: "/withdwal/record",
+            element: <WithdrawalRecord />,
+          },
+          {
+            path: "/withdwalmethod",
+            element: <WithdwalMethod />,
+          },
+          {
+            path: "/changepassword",
+            element: <ChangePassword />,
+          },
+          {
+            path: "/changeFundpassword",
+            element: <ChangeFundPassword />,
+          },
+          {
+            path: "/companyinfo",
+            element: <ConpanyInfo />,
+          },
+        ],
       },
     ],
   },

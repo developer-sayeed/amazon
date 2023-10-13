@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { AiOutlineLeft } from "react-icons/ai";
+import UseAuthUserState from "../../hooks/UseAuthUserState";
 
 const Withdraw = () => {
+  const { user } = UseAuthUserState();
+
+  const [inputValue, setInputValue] = useState("");
+  const [result, setResult] = useState("");
+  const handleInputChange = (e) => {
+    const newValue = parseFloat(e.target.value);
+    setInputValue(newValue);
+
+    // Calculate 10% of the new value
+    const tenPercent = (newValue * 10) / 100;
+    setResult(newValue - tenPercent);
+  };
+
   return (
     <>
       <div className="withdwalSection">
@@ -16,7 +30,7 @@ const Withdraw = () => {
         </div>
         <div className="deposit-Body">
           <div className="full-table">
-            <h3>Balance $400</h3>
+            <h3>Balance ${user.totalBalance}</h3>
             <form action="" onSubmit={() => alert("Coming Soon..")}>
               <div className="form-group">
                 <input
@@ -24,14 +38,18 @@ const Withdraw = () => {
                   className="form-control"
                   id="address"
                   disabled
-                  value={"d79aa107ccbc.....1c70e13f2e4f9434"}
+                  value={user.withdrawalAddress}
+                  placeholder="TRC20 Address"
                 />
               </div>
               <div className="form-group">
                 <input
-                  type="text"
                   className="form-control"
                   id="amount"
+                  type="number"
+                  min={10}
+                  value={inputValue}
+                  onChange={handleInputChange}
                   placeholder="Please enter the Withdrwal amount"
                 />
               </div>
@@ -43,8 +61,19 @@ const Withdraw = () => {
                   placeholder="Please enter the Transaction password"
                 />
               </div>
+              <div className="form-group">
+                {inputValue ? (
+                  <p style={{ color: "green", textAlign: "start" }}>
+                    You Recived : ${result} (after 10% Reduction Tax)
+                  </p>
+                ) : (
+                  ""
+                )}
+              </div>
 
-              <button className="submit">Submit</button>
+              <button className="submit" style={{ marginTop: "0px" }}>
+                Submit
+              </button>
             </form>
             <div className="withdwal-footer">
               <div className="note">

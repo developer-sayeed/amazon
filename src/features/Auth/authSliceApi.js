@@ -1,9 +1,9 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
 //   Registration User
 export const createUser = createAsyncThunk("auth/createUser", async (data) => {
   try {
+    console.log(data);
     const response = await axios.post(
       `http://localhost:5050/api/v1/auth/register`,
       data,
@@ -11,8 +11,10 @@ export const createUser = createAsyncThunk("auth/createUser", async (data) => {
         withCredentials: true,
       }
     );
+    console.log(response);
     return response.data;
   } catch (error) {
+    console.log(error);
     throw new Error(error.response.data.message);
   }
 });

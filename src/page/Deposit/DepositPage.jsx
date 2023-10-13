@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineLeft } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const DepositPage = () => {
+  const [copytext, setCopytext] = useState("");
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(copytext);
+    alert("copied");
+  };
   return (
     <>
       <div className="depositSection">
@@ -20,9 +26,25 @@ const DepositPage = () => {
               <img src="https://i.ibb.co/23L6cRR/download.png" />
               <div className="copy-div">
                 <span className="payUrl">
-                  TYXsDocNXMT4Jbf67kvhzzjBWkK73KyjHj
+                  <input
+                    style={{
+                      width: "50%",
+                      background: "none",
+                      border: "none",
+                      color: "#000",
+                    }}
+                    type="text"
+                    disabled
+                    defaultValue={"TYXsDocNXMT4Jbf67kvhzzjBWkK73KyjHj"}
+                    value={copytext}
+                    onChange={({ target }) => {
+                      setCopytext(target.value);
+                    }}
+                  />
                 </span>
-                <span className="copybtn">Copy</span>
+                <span className="copybtn" onClick={handleCopy}>
+                  Copy
+                </span>
               </div>
             </div>
 

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { createtoast } from "../../utils/reactToastify.js";
 import { setMessageEmpty } from "../../features/auth/authSlice";
-import { createUser } from "../../features/Auth/authSliceApi";
+import { createUser } from "../../features/auth/authSliceApi.js";
 
 const RegisterPage = () => {
   const dispatch = useDispatch();
@@ -36,6 +36,7 @@ const RegisterPage = () => {
       !input.country ||
       !input.phone ||
       !input.password ||
+      !input.referId ||
       !input.fundpassword
     ) {
       createtoast("All Fields Required", "warning");
@@ -45,11 +46,13 @@ const RegisterPage = () => {
           name: input.name,
           email: input.email,
           password: input.password,
-          mobile: input.phone,
+          phone: input.phone,
           country: input.country,
           fundPassword: input.fundpassword,
+          referId: input.referId,
         })
       );
+
       SetInput({
         name: "",
         email: "",
@@ -57,6 +60,7 @@ const RegisterPage = () => {
         country: "",
         password: "",
         fundpassword: "",
+        referId: "",
       });
     }
   };
@@ -72,7 +76,7 @@ const RegisterPage = () => {
   }, [error, message]);
   return (
     <>
-      <div className="screen-1">
+      <div className="screen-1 registationpage">
         <div className="logo">
           <img
             src="https://www.pixelparfait.graphics/wp-content/uploads/2023/01/AMZN-e9f942e4.png"
@@ -143,7 +147,9 @@ const RegisterPage = () => {
           <div className="amazonform">
             <input
               type="text"
-              name="reference"
+              name="referId"
+              value={input.referId}
+              onChange={handleInputChange}
               className="form-control"
               placeholder="Refer ID"
             />
